@@ -1,0 +1,132 @@
+/* ----------Team ROG--------- */
+
+.team{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    padding-top: 30px; 
+    box-shadow: 0 0 0 3em black inset;
+    background-color: red;
+    padding: 6vw;
+    border-bottom: 13px solid white;
+}
+
+.team h1{
+    font-size: 3rem;
+    color: black;
+    font-family: Asus Rog;
+    line-height: 1.1;
+}
+
+.team h1::selection,.team p::selection,.team .btn::selection{
+    color: red;
+    background: black;
+}
+
+.team p{
+    color: black;
+    font-family: Asus Rog;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+.team .btn{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px 30px 10px;
+    color: black;
+    font-size: 1.7rem;
+    font-family: Asus Rog;
+    position: relative;
+    cursor:pointer;
+}
+
+.team .btn:before{
+    top:0;
+    left: 0;
+}
+
+.team .btn:hover:before{
+    transform: translate(7px ,7px);
+}
+
+.team .btn:after{
+    top: 0;
+    right: 0;
+}
+
+.team .btn:hover:after{
+    transform: translate(-7px ,7px);
+}
+
+.team .btn span:after{
+    left: 0;
+    bottom: 0;
+}
+
+.team .btn:hover span::after{
+    transform: translate(7px ,-7px);
+}
+
+.team .btn span:before{
+    right: 0;
+    bottom: 0;
+}
+
+.team .btn:hover span:before{
+    transform: translate(-7px ,-7px);
+}
+
+.team .btn:before,.team .btn:after,.team .btn span:after,.team .btn span:before{
+    content: '';
+    display: block;
+    width: .2em;
+    height: .2em;
+    background: black;
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+
+@media (max-width:630px){
+    .team h1{
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
+    .team p{
+        font-size: 20px;
+        line-height: 30px;
+        padding: 10px 20px 0;
+    }
+
+    .team .btn{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 430px){
+    .team h1{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .team p{
+        font-size: 15px;
+        line-height: 30px;
+        padding: 10px 20px 0;
+        font-weight: 800;
+    }
+
+    .team .btn{
+        margin-bottom: 20px;
+    }
+
+    .row .column img{
+        height: 30%;
+    }
+}
+  

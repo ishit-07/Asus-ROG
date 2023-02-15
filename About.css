@@ -1,0 +1,217 @@
+/* -------About-------- */
+
+#about{
+    background: linear-gradient(115deg, rgb(178, 14, 14) 5.8%,rgb(83, 30, 30) 112.6%);
+    padding-top: 100px;
+    text-align: center;
+    margin: auto;
+    /* width: 140%; */
+}
+
+#about h1{
+    font-family: Asus Rog;
+    font-size: 7rem;
+    font-weight: 800;
+}
+
+#about h1::selection{
+    color:white;
+}
+
+.text-img p::selection{
+    color: white;
+}
+
+.text-img{
+    border: white;
+    padding: 25px 20px;
+  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.text-img img{
+    width: 50%;
+    float: right;
+    padding-top: 20px;
+}
+
+.text-img p{
+    font-size: 14px;
+    padding-top: 100px;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-weight: 800;
+    text-align: left;
+}
+
+
+/* --------Products---------- */
+
+#product{
+    margin: auto;
+    text-align: center;
+    padding-top: 130px;
+    background: black;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
+
+#product h1{
+    color: white;
+    font-family: Asus Rog;
+    font-size: 7rem;
+    width: 100%;
+}
+
+#product h1::selection,p::selection{
+    color: rgb(149, 14, 14);
+}
+
+#product p{
+    color: white;
+    font-family: Asus Rog;
+    font-size: 3rem;
+    padding-top:50px;
+    width:100%
+}
+
+#product .row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* align-self: normal; */
+    grid-column-gap: 2vw;
+    grid-row-gap: 1vw;
+    padding: 30px;
+}
+
+#product .row .column{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    margin-top: 20px;
+    background: rgba(255,255,255,0.05); 
+    padding: 20px 70px 48px;
+}
+
+#product .row .column:hover{
+    background: rgb(21, 16, 16);
+}
+
+.column img{
+    width: 90%;
+    height: 170px;
+    -webkit-transition: transform 0.25s ease;    
+    transition: .5 ease;
+    cursor: pointer;
+}
+
+.column img:hover{
+    transform: translate(20 ,30);
+}
+
+.column h2{
+    color: white;
+    font-family: Asus Rog;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.column h2::selection,.column li::selection{
+    color: rgb(149, 14, 14);
+}
+
+.column ul{
+    margin: 20px
+}
+
+.column ul li{
+    color: gray;
+    text-align: left;
+    line-height: 22px; 
+    font-size: 14px;
+}
+
+@media (max-width:1210px){
+    #product .row{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 780px){
+    .column img{
+        height: 140px
+    }
+}
+
+@media (max-width:700px){
+    
+    .text-img img{
+        width: 50%;
+        padding-top: 50px;
+    }
+    
+    .text-img p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #product .row{
+        grid-template-columns: 1fr;
+    }
+    .column img{
+        height: 300px;
+        width:100%;
+    }
+    
+    .column ul li{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .text-img{
+        padding-top: 30px; 
+    }
+}
+
+@media(max-width: 480px){
+    #product h1{
+        font-size: 5rem;
+    }
+    #product p{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .column img{
+        height: 150px;
+    }
+    .column h2{
+        font-size: 16px;
+    }
+    .column ul li{
+        font-size: 14px;
+    }
+
+    .text-img{
+        padding-top: 30px; 
+    }
+
+    .text-img img{
+        width: 50%;
+        padding-top: 50px;
+    }
+}
+
+@media(max-width: 400px){
+    .column img{
+        height: 130px;
+    }
+    .column h2{
+        font-size: 14px;
+    }
+    .column ul li{
+        font-size: 12px;
+        line-height: 2;
+    }
+}

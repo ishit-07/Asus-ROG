@@ -1,0 +1,159 @@
+
+/* --------Contact---------- */
+
+#contact{
+    padding: 25px 0 36px;
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+#contact h1{
+    text-align: center;
+    font-family: Asus Rog;
+    font-size: 5rem;
+    padding-bottom: 30px;
+}
+
+#contact h1::selection{
+    color:rgb(170, 17, 17);
+}
+
+.text-social{
+    margin: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgb(44, 42, 42);
+}
+
+.text-social .text-contact li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 20px;
+    font-size: 1.3rem;
+    transition: 0.5s;
+    cursor: pointer;
+    color: rgb(188, 186, 186);
+}
+
+.text-social .social li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 30px;
+    font-size: 1.9rem;
+    transition: 0.5s;
+    color: rgb(188, 186, 186);
+    cursor: pointer;
+}
+
+.text-social p{
+    display: none;
+}
+
+.text-social .text-contact li::selection,.text-social .social li::selection{
+    color:rgb(170, 17, 17);
+} 
+
+.text-social .text-contact li:hover,.text-social .social li i:hover{
+    color:rgb(170, 17, 17);
+}
+
+
+.term{
+    display: flex;
+    justify-content: space-between;
+    margin:25px;
+    padding: 0;
+    padding-top: 5px;
+    font-family: Roboto;
+}
+
+.term .ri-global-line{
+    color:rgb(188, 186, 186);
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
+.term div{
+    display: flex;
+}
+
+.term div ul li{
+    display: inline-block;
+    color:rgb(188, 186, 186);
+    padding-left: 30px;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    transition: .5s;
+    cursor: pointer;
+    list-style: none;
+}
+
+.term div p{
+    padding-left: 30px;
+    color: rgb(188, 186, 186);
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: .5s;
+    font-size: .9rem;
+}
+
+.term a:hover,.term ul li:hover,.term div p:hover{
+    color:rgb(170, 17, 17);
+}
+
+@media (max-width: 830px){
+    .text-social{
+       display: block;
+       margin: 0;
+    }
+    .text-social .text-contact li{
+        display: block;
+        border-bottom: 2px solid rgb(48, 48, 48);
+        line-height: 50px;
+        padding: 0 20px;
+    }
+
+    .text-social p{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+        color: rgb(188, 186, 186);
+        font-family: Roboto;
+        font-size: 1.5rem;
+    }
+
+    .text-social .social{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 780px){
+    .term{
+        display: block;
+        line-height: 30px;
+    }
+
+    .term div{
+        display: block;
+    }
+
+    .term div p{
+        padding: 0;
+    }
+    .term div ul li{
+        padding: 0;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 360px){
+    .text-social .social{
+        padding-right: 30px;
+    }
+}
