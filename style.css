@@ -1,5 +1,10 @@
 @import url(https://fonts.google.com/specimen/Roboto+Slab);
 
+@font-face{
+    font-family: myfont;
+    src: url(AsusRog-Regular.ttf)
+}
+
 *{
     margin: 0;
     padding: 0;
